@@ -13,3 +13,5 @@ Hereby thank P3TERX for his amazing job: https://github.com/P3TERX/Actions-OpenW
 - When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
 
 [For the details please visit my Y2B Channel (in Chinese) | 视频教程](https://www.youtube.com/c/esirplayground)
+
+配置项说明 ： https://onedrive.live.com/view.aspx?resid=64C9D95F1BBD0FAF!16042&ithint=file%2cxlsx&authkey=!AKR-UGHOsqhY1cc
