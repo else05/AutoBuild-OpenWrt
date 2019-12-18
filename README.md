@@ -15,3 +15,7 @@ Hereby thank P3TERX for his amazing job: https://github.com/P3TERX/Actions-OpenW
 [For the details please visit my Y2B Channel (in Chinese) | 视频教程](https://www.youtube.com/c/esirplayground)
 
 配置项说明 ： https://onedrive.live.com/view.aspx?resid=64C9D95F1BBD0FAF!16042&ithint=file%2cxlsx&authkey=!AKR-UGHOsqhY1cc
+
+配置项引用：
+https://www.right.com.cn/forum/thread-1237348-1-1.html
+https://www.right.com.cn/forum/thread-344825-1-1.html
