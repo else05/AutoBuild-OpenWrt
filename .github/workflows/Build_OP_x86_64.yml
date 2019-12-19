@@ -94,11 +94,11 @@ jobs:
 
     - name: Assemble artifact
       run: |
-        rm -rf openwrt/artifact/
-        mkdir -p openwrt/artifact/combined/
-        mkdir -p openwrt/artifact/uefi/
-        find openwrt/bin/targets/ -name "*combined*img*" | xargs -i cp -f {} openwrt/artifact/combined/
-        find openwrt/bin/targets/ -name "*uefi*img*" | xargs -i cp -f {} openwrt/artifact/uefi/
+        rm -rf ./artifact/
+        mkdir -p ./artifact/combined/
+        mkdir -p ./artifact/uefi/
+        find openwrt/bin/targets/ -name "*combined*img*" | xargs -i cp -f {} ./artifact/combined/
+        find openwrt/bin/targets/ -name "*uefi*img*" | xargs -i cp -f {} ./artifact/uefi/
 
     - name: Upload packages
       uses: actions/upload-artifact@master
@@ -116,10 +116,10 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: OpenWrt firmware(combined)
-        path: openwrt/artifact/combined/
+        path: ./artifact/combined/
 
     - name: Upload firmware (uefi)
       uses: actions/upload-artifact@master
       with:
         name: OpenWrt firmware(uefi)
-        path: openwrt/artifact/uefi/
+        path: ./artifact/uefi/
