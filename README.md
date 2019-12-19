@@ -25,11 +25,10 @@ https://www.right.com.cn/forum/thread-344825-1-1.html
 
 -------
 主要修改了`x86_64`的配置 
-1. 取消固件压缩，因为`github` `actions/upload-artifact`本身会压缩，它不支持直接上传文件 [issue](https://github.com/actions/upload-artifact/issues/3) . 
-2. 分区调整为`512M 2G` (原来是`64M 300M`)
-3. 增加一套主题，增加`Vim`和`screen`
-4. 取消虚拟机VMDK文件的生成,(我物理机直接装，用不上)
-5. 拆分构建成功后打包文件:
+1. 分区调整为`512M 2G` (原来是`64M 300M`)
+2. 增加一套主题，增加`Vim`和`screen`
+3. 取消虚拟机VMDK文件的生成,(我物理机直接装，用不上)
+4. 拆分构建成功后打包文件:
     `OpenWrt packages`: 这次构建中所有的`ipk`插件
     `OpenWrt firmware(combined+uefi)`：构建后的整个`targets`文件夹，包含`combined+uefi`
     `OpenWrt firmware(combined)`： 只有`combined`的`img`固件

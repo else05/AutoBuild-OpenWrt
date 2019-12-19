@@ -94,11 +94,11 @@ jobs:
 
     - name: Assemble artifact
       run: |
-        rm -rf ./artifact/
-        mkdir -p ./artifact/combined/
-        mkdir -p ./artifact/uefi/
-        find ./bin/targets/ -name "*combined*img*" | xargs -i cp -f {} ./artifact/combined/
-        find ./bin/targets/ -name "*uefi*img*" | xargs -i cp -f {} ./artifact/uefi/
+        rm -rf openwrt/artifact/
+        mkdir -p openwrt/artifact/combined/
+        mkdir -p openwrt/artifact/uefi/
+        find openwrt/bin/targets/ -name "*combined*img*" | xargs -i cp -f {} openwrt/artifact/combined/
+        find openwrt/bin/targets/ -name "*uefi*img*" | xargs -i cp -f {} openwrt/artifact/uefi/
 
     - name: Upload packages
       uses: actions/upload-artifact@master
