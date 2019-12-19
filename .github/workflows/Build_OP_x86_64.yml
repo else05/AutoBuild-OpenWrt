@@ -13,7 +13,7 @@ on:
     types: [published]
 
   #push:
-  #  branches: 
+  #  branches:
   #    - master
 
   #schedule:
@@ -92,14 +92,34 @@ jobs:
         echo -e "$(nproc) thread build."
         make -j$(nproc) V=s
 
+    - name: Assemble artifact
+      run: |
+        rm -rf ./artifact/
+        mkdir -p ./artifact/combined/
+        mkdir -p ./artifact/uefi/
+        find ./bin/targets/ -name "*combined*img*" | xargs -i cp -f {} ./artifact/combined/
+        find ./bin/targets/ -name "*uefi*img*" | xargs -i cp -f {} ./artifact/uefi/
+
     - name: Upload packages
       uses: actions/upload-artifact@master
       with:
         name: OpenWrt packages
         path: openwrt/bin/packages
 
-    - name: Upload firmware
+    - name: Upload firmware (combined+uefi)
       uses: actions/upload-artifact@master
       with:
-        name: OpenWrt firmware
+        name: OpenWrt firmware(combined+uefi)
         path: openwrt/bin/targets
+
+    - name: Upload firmware (combined)
+      uses: actions/upload-artifact@master
+      with:
+        name: OpenWrt firmware(combined)
+        path: openwrt/artifact/combined/
+
+    - name: Upload firmware (uefi)
+      uses: actions/upload-artifact@master
+      with:
+        name: OpenWrt firmware(uefi)
+        path: openwrt/artifact/uefi/
