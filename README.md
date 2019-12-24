@@ -14,6 +14,8 @@ Hereby thank P3TERX for his amazing job: https://github.com/P3TERX/Actions-OpenW
 
 [For the details please visit my Y2B Channel (in Chinese) | 视频教程](https://www.youtube.com/c/esirplayground)
 
+-------------
+
 配置项说明（在线excel） ： https://onedrive.live.com/view.aspx?resid=64C9D95F1BBD0FAF!16042&ithint=file%2cxlsx&authkey=!AKR-UGHOsqhY1cc
 
 配置项引用：
@@ -23,6 +25,9 @@ Hereby thank P3TERX for his amazing job: https://github.com/P3TERX/Actions-OpenW
 教程：
 - https://p3terx.com/archives/openwrt-compilation-steps-and-commands.html
 - http://www.jeepxie.net/article/529776.html
+- https://www.dazhuanlan.com/2019/10/11/5d9f9b7c8cef3/
+
+------------------
 
 ##### 不要fork 不要fork 不要fork 
 ##### 里面内容是按照我自己的需求修改的，不一定适合你.
