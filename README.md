@@ -17,15 +17,19 @@ Hereby thank P3TERX for his amazing job: https://github.com/P3TERX/Actions-OpenW
 配置项说明（在线excel） ： https://onedrive.live.com/view.aspx?resid=64C9D95F1BBD0FAF!16042&ithint=file%2cxlsx&authkey=!AKR-UGHOsqhY1cc
 
 配置项引用：
-https://www.right.com.cn/forum/thread-1237348-1-1.html
-https://www.right.com.cn/forum/thread-344825-1-1.html
+- https://www.right.com.cn/forum/thread-1237348-1-1.html
+- https://www.right.com.cn/forum/thread-344825-1-1.html
+
+教程：
+- https://p3terx.com/archives/openwrt-compilation-steps-and-commands.html
+- http://www.jeepxie.net/article/529776.html
 
 ##### 不要fork 不要fork 不要fork 
 ##### 里面内容是按照我自己的需求修改的，不一定适合你.
 
 -------
 主要修改了`x86_64`的配置 
-1. 分区调整为`512M 2G` (原来是`64M 300M`)
+1. 分区调整为`64M 512M` (原来是`64M 300M`)
 2. 增加一套主题，增加`Vim`和`screen`
 3. 取消虚拟机VMDK文件的生成,(我物理机直接装，用不上)
 4. 拆分构建成功后打包文件:

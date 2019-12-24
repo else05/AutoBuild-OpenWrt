@@ -71,6 +71,9 @@ jobs:
         ./scripts/feeds install -a
         ./scripts/feeds install -a
 
+#    - name: Setup Debug Session (30min)
+#      uses: P3TERX/debugger-action@master
+
     - name: Configuration Customization - Build_x86_64
       env:
         CONFIG_FILE: 'x86_64.config'
