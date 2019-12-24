@@ -27,6 +27,10 @@ Hereby thank P3TERX for his amazing job: https://github.com/P3TERX/Actions-OpenW
 - http://www.jeepxie.net/article/529776.html
 - https://www.dazhuanlan.com/2019/10/11/5d9f9b7c8cef3/
 - https://www.jianshu.com/p/eed71e8a22cc
+- https://www.yichya.dev/openwrt-customize-1/
+- https://www.yichya.dev/openwrt-customize-2/
+- https://www.asmodeus.cn/archives/728
+- https://qingsay.com/openwrt-build-memo.html
 
 ------------------
 
